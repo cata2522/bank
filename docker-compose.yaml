@@ -16,6 +16,6 @@ services:
       - postgres
     environment:
       - GIN_MODE=release
-      - DB_SOURCE=postgresql://root:secret@postgres:5432/simple_bank?sslmode=disable
+      - DB_SOURCE=postgresql://root:lb8EuY3aZutM1T9BYv1I@postgres:5432/simple_bank?sslmode=disable
     entrypoint: ["/app/wait-for.sh", "postgres:5432", "--", "/app/start.sh"]
     command: ["/app/main"]
